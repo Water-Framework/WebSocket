@@ -34,7 +34,7 @@ graph TD
 | `payload` | byte[] | Binary message payload |
 | `contentType` | String | Default "text/plain" |
 | `timestamp` | Date | Message timestamp |
-| `params` | HashMap | Additional key-value parameters |
+| `params` | Map<String, String> | Additional key-value parameters |
 
 ```java
 WebSocketMessage msg = WebSocketMessage.createMessage("chat:send", payload, type);
