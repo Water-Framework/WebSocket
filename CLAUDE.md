@@ -20,7 +20,7 @@ public class WebSocketMessage {
     private String contentType;                 // Default: "text/plain"
     private Date timestamp;
     private WebSocketMessageType type;
-    private HashMap<String, String> params;
+    private Map<String, String> params;
 
     static WebSocketMessage createMessage(String cmd, byte[] payload, WebSocketMessageType type);
     static WebSocketMessage fromString(String message);  // JSON deserialization
